@@ -1,6 +1,3 @@
-Creating a GitHub README for your Python script that checks the availability of URLs and categorizes them as "working" or "not working" with an added picture can be done in Markdown format. Here's a README.md template for your code:
-
-```markdown
 # URL Checker
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
