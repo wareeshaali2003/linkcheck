@@ -9,20 +9,20 @@ urls = [
 ]
 
 # Lists to store working and non-working URLs
-Poductive_URLS = []
-non_Poductive_URLS = []
+working_URLS = []
+notworking_URLS = []
 
 # Loop through the list of URLs
 for url in urls:
     try:
         html = urlopen(url)
     except HTTPError as e:
-        non_Poductive_URLS.append(url)
+        notworking_URLS.append(url)
     except URLError as e:
-        non_Poductive_URLS.append(url)
+        notworking_URLS.append(url)
     else:
-        Poductive_URLS.append(url)
+        working_URLS.append(url)
 
 # Print the lists of working and non-working URLs
-print("working urls: ",Poductive_URLS )
-print("not working urls: ",non_Poductive_URLS)
+print("working urls: ",working_URLS )
+print("not working urls: ",notworking_URLS )
